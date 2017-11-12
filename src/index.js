@@ -3,6 +3,7 @@ import "./style/main.css";
 import { clear } from "./utils/ctxhelpers";
 
 const canvas = document.getElementById("gm5");
+const scoreHtml = document.getElementById("score");
 const ctx = canvas.getContext("2d");
 let cancelId = null;
 
@@ -61,6 +62,7 @@ function down() { return 2; }
 // }
 
 
+//HP: 100/ Red: 2
 
 function start() {
   clear(ctx);
@@ -69,6 +71,9 @@ function start() {
   bb1.hp > 0 ? bb1.render(ctx, gb1) : null;
   bb2.hp > 0 ? bb2.render(ctx, gb1) : null;
   mybb1.hp > 0 ? mybb1.render(ctx) : null;
+  let red = 2 - (bb1.hp > 0 ? 0 : 1) - (bb2.hp > 0 ? 0 : 1);
+  if (red === 0) red += "\nDONE! PLEASE REFRESH(F5)"
+  scoreHtml.innerHTML = `HP: ${bb1.hp + bb2.hp}/ RED: ${red}`;
   cancelId = requestAnimationFrame(start);
 }
 
