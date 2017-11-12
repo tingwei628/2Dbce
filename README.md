@@ -4,7 +4,13 @@
 
 > ### A ball collision game (demo)
 
-### Stack
+## Screencast
+
+
+![GIF](https://media.giphy.com/media/l2QE6s3ISw2RUSd4A/giphy.gif)
+
+
+## Stack
 - Node.JS
 - HTML5 Canvas
 - Rollup
