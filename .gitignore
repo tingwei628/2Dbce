@@ -1,0 +1,6 @@
+.vscode
+node_modules/
+build/prod/*
+!build/prod/index.html
+build/dev/*
+!build/dev/index.html
