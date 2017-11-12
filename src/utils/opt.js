@@ -1,7 +1,7 @@
-export function create(ctx, x, y, r) {
+export function create(ctx, x, y, r, color = "green") {
   ctx.beginPath();
   ctx.arc(x, y, r, 0, Math.PI * 2, false);
-  ctx.fillStyle = "green";
+  ctx.fillStyle = color;
   ctx.fill();
   ctx.closePath();
 }
