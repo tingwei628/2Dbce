@@ -4,7 +4,7 @@
   "description": "- A game to play bomberman",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo done",
     "reload": "livereload 'build/'",
     "clean": "rm -rf build/js/",
     "build:dev": "npm run clean && node_modules/.bin/rollup -c rollup.config.js",
