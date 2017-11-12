@@ -12,7 +12,7 @@
     "build:prod": "npm run clean && NODE_ENV=production node_modules/.bin/rollup -c rollup.config.js",
     "start": "npm run build-run:dev",
     "server": "node ./src/utils/server.js",
-    "postinstall": "npm install rollup && npm run build:prod"
+    "postinstall": "npm run build:prod"
   },
   "repository": {
     "type": "git",
