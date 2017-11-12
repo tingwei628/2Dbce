@@ -1,9 +1,7 @@
 ## gm5
 
-- A game to play bomberman
+> A ball collision game 
 
 - Single mode
-- Double connection mode
-- Rank
-- Share (Bonus)
+
 - Vote
