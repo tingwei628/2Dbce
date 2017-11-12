@@ -1,0 +1,22 @@
+.root {
+  margin: 0;
+}
+canvas {
+  background: #000;
+}
+#left {
+  float: left;
+}
+
+#right {
+  float: left;
+  margin-left: 30;
+  width: 15rem;
+}
+#score {
+  font-size: 2rem;
+}
+
+#hackbit-vote-widget {
+  clear: both;
+}

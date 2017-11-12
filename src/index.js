@@ -1,6 +1,6 @@
 import { GB, BB } from "./object";
-import "./style/canvas.css";
-import { clear } from "./utils/opt";
+import "./style/main.css";
+import { clear } from "./utils/ctxhelpers";
 
 const canvas = document.getElementById("gm5");
 const ctx = canvas.getContext("2d");
@@ -10,7 +10,7 @@ const ctx = canvas.getContext("2d");
 
 let gb1 = new GB(ctx, 100, 50);
 let gb2 = new GB(ctx, 80, 40);
-let bb1 = new BB(ctx, 50, 100, 20, "red", 100);
+let bb1 = new BB(ctx, 50, 100, 20, "red", 100, true);
 let mybb1 = new BB(ctx, 30, 30, 30, "yellow", 100);
 
 //simple time
@@ -30,10 +30,8 @@ function start() {
   clear(ctx);
   gb1.render(ctx);
   gb2.render(ctx);
-  console.log("bb1.hp-------> ", bb1.hp);
-  bb1.hp > 0 ? bb1.render(ctx) : null;
+  bb1.hp > 0 ? bb1.render(ctx, gb1) : null;
   mybb1.hp > 0 ? mybb1.render(ctx) : null;
-  bb1.hp > 0 ? bb1.collision(true, bb1, gb1) : null;
   cancelId = requestAnimationFrame(start);
 }
 

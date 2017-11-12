@@ -1,10 +1,13 @@
 import {
-  create,
-  clear,
   stepx,
   stepy,
+  mutualcollision
+} from "../utils/movehelpers";
+import {
+  create,
+  clear,
   transaction
-} from "../utils/opt";
+} from "../utils/ctxhelpers";
 import { xyrError } from "../utils/error";
 
 // gb - good ball
@@ -34,7 +37,15 @@ class GB {
 
 // bb - bad ball
 class BB {
-  constructor(ctx, x = 240, y = 160, r = 10, color = "red", hp = 100) {
+  constructor(
+    ctx,
+    x = 240,
+    y = 160,
+    r = 10,
+    color = "red",
+    hp = 100,
+    detected = false
+  ) {
     xyrError(x, y, r);
     this.bb_x = x;
     this.bb_y = y;
@@ -43,6 +54,7 @@ class BB {
     this.vy = 3;
     this.color = color;
     this.hp = hp;
+    this.detected = detected;
     create(ctx, this.bb_x, this.bb_y, this.bb_r, this.color);
   }
 
@@ -52,32 +64,17 @@ class BB {
     this.bb_x += this.vx;
     this.bb_y += this.vy;
   }
-  render(ctx) {
+  render(ctx, target = null) {
     transaction(ctx, this.move.bind(this), this.bb_x, this.bb_y, this.bb_r, this.color);
+    this.collision(this, target);
   }
-  collision(detected, b, target) {
-    if (detected) {
-      this.hp = mutualcollision(b, target);
-      console.log("xxxxxx", this.hp);
+  collision(source, target) {
+    if (this.detected && target !== null) {
+      this.hp = mutualcollision(source, target);
     }
   }
 }
 
 
-function mutualcollision(b, target, state = null) {
-  let bb1 = b;
-  let gb1 = target;
-  let dx2 = Math.pow(gb1.x - bb1.x, 2);
-  let dy2 = Math.pow(gb1.y - bb1.y, 2);
-  let d = Math.sqrt(dx2 + dy2);
-  let hp = bb1.hp;
-  if (d < gb1.r + bb1.r) {
-    console.log("撞到惹");
-    hp = hp - 10;
-    console.log("----> after collision ", state.bb1.hp);
-  }
-  console.log("dfdfdfdffdfdfdf", hp);
-  return hp;
 
-}
 export { GB, BB };

@@ -8,10 +8,20 @@
 </head>
 
 <body>
-  <div id="root">
+  <section class="root">
     <h1>gm5 - A ball collision game</h1>
-  </div>
-  <canvas id="gm5" width="500" height="500"></canvas>
+    <div id="left">
+      <canvas id="gm5" width="500" height="500"></canvas>
+    </div>
+    <div id="right">
+      <div id="score">HP: 100/ Red: 2</div>
+      <div id="des">
+        <p>Keys: Press ARROW KEY Start = Press ENTER Pause = Press SPACE Exit = Press ESC</p>
+        <br/>
+        <p>Rules: 1. HP = 0, Lost 2. Collided with green balls, HP up +10 3. Collided with red balls, HP down -10</p>
+      </div>
+    </div>
+  </section>
   <script src="./build/js/index.min.js"></script>
   <script src="https://www.nodeknockout.com/entries/133-goldmultiply5/vote.js" type="text/javascript"></script>
 </body>
