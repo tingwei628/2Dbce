@@ -59,6 +59,13 @@ class BB {
   }
 
   move() {
+    //arrow key
+    // if (controller != null) {
+    //   this.bb_x += controller.left();
+    //   this.bb_x += controller.right();
+    //   this.bb_y += controller.up();
+    //   this.bb_y += controller.down();
+    // }
     this.vx = stepx(this.bb_x, this.vx, this.bb_r);
     this.vy = stepy(this.bb_y, this.vy, this.bb_r);
     this.bb_x += this.vx;

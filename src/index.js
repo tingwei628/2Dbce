@@ -4,6 +4,10 @@ import { clear } from "./utils/ctxhelpers";
 
 const canvas = document.getElementById("gm5");
 const ctx = canvas.getContext("2d");
+let cancelId = null;
+
+
+
 
 // record ball position states
 
@@ -13,8 +17,37 @@ let gb2 = new GB(ctx, 80, 40);
 let bb1 = new BB(ctx, 50, 100, 20, "red", 100, true);
 let mybb1 = new BB(ctx, 30, 30, 30, "yellow", 100);
 
-//simple time
-let cancelId = null;
+document.onkeydown = function (evt) {
+  switch (evt.keyCode) {
+    case 37:
+      left();
+      break;
+    case 38:
+      up();
+      break;
+    case 39:
+      right();
+      break;
+    case 40:
+      down();
+      break;
+    // case 32: //SPACE (stop)
+    //   stop();
+    //   break;
+    // case 13: //ENTER (start)
+    //   start();
+    //   break;
+  }
+}
+
+//keybinding
+
+function left() { return -2 }
+function up() { return -2; }
+function right() { return 2; }
+function down() { return 2; }
+
+
 
 // let state = {
 //   gb1: { x: gb1.gb_x, y: gb1.gb_y, r: gb1.gb_r },
@@ -22,7 +55,9 @@ let cancelId = null;
 //   bb1: { x: bb1.bb_x, y: bb1.bb_y, r: bb1.bb_r, hp: bb1.hp },
 //   mybb1: { x: mybb1.bb_x, y: mybb1.bb_y, r: mybb1.bb_r, hp: mybb1.hp },
 // };
-
+// function stop(cancelId) {
+//   cancelAnimationFrame(cancelId);
+// }
 
 
 
