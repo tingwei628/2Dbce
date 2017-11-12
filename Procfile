@@ -1,1 +1,1 @@
-web: node src/utils/server.js
+web: npm run server
