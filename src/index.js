@@ -1,7 +1,7 @@
 import { GB, BB } from "./object";
 import "./style/canvas.css";
 import { clear } from "./utils/opt";
-document.getElementById("root").innerHTML = "gm5 - A ball collision game";
+
 const canvas = document.getElementById("gm5");
 const ctx = canvas.getContext("2d");
 
