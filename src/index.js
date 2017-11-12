@@ -14,7 +14,8 @@ let cancelId = null;
 
 let gb1 = new GB(ctx, 100, 50);
 let gb2 = new GB(ctx, 80, 40);
-let bb1 = new BB(ctx, 50, 100, 20, "red", 100, true);
+let bb1 = new BB(ctx, 50, 100, 20, "red", 300, true);
+let bb2 = new BB(ctx, 150, 40, 20, "red", 200, true);
 let mybb1 = new BB(ctx, 30, 30, 30, "yellow", 100);
 
 document.onkeydown = function (evt) {
@@ -66,6 +67,7 @@ function start() {
   gb1.render(ctx);
   gb2.render(ctx);
   bb1.hp > 0 ? bb1.render(ctx, gb1) : null;
+  bb2.hp > 0 ? bb2.render(ctx, gb1) : null;
   mybb1.hp > 0 ? mybb1.render(ctx) : null;
   cancelId = requestAnimationFrame(start);
 }
