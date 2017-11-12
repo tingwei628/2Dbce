@@ -5,4 +5,4 @@ var app = express();
 
 app.use("/", express.static(path.join(__dirname, "../../build")));
 app.use("/build", express.static(path.join(__dirname, "../../build")));
-app.listen(3000, () => console.log("start!!!"));
+app.listen(process.env.PORT || 3000, () => console.log("start!!!"));
