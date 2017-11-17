@@ -21,6 +21,7 @@ $npm install
 
 ## Deployment
 - [Heroku](https://www.heroku.com/)
+- [Install devDependencies when deploying on Heroku](https://github.com/tingwei628/HC/wiki)
 
 ## Stack
 - [Node.JS](https://nodejs.org/en/)
