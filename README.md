@@ -13,7 +13,7 @@
 - Livereload
 
 ## Author
-@tingwei628 
+[@tingwei628](https://github.com/tingwei628)
 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/sbvq6p199xe)
 
