@@ -1,4 +1,5 @@
 .vscode
+*.log
 node_modules/
 lib/**/build/prod/*
 !lib/**/build/prod/index.html

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo done",
     "clean": "rm -rf lib/gm5/build/js/",
-    "build:dev": "npm run clean && node_modules/.bin/rollup -c lib/gm5/rollup.config.js",
+    "build:dev": "npm run clean && node_modules/.bin/rollup -c lib/gm5/rollup.config.js --watch",
     "build:prod": "npm run clean && NODE_ENV=production node_modules/.bin/rollup -c lib/gm5/rollup.config.js",
     "start": "npm run build:dev && npm run server",
     "server": "node lib/gm5/src/utils/server.js",
@@ -41,7 +41,9 @@
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^2.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  },
   "engines": {
     "node": "6.x.x"
   }
