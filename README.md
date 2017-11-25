@@ -15,7 +15,7 @@
 ## Author
 @tingwei628 
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](url=https://twitter.com/sbvq6p199xe)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/sbvq6p199xe)
 
 ## License
 MIT
