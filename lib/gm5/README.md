@@ -27,6 +27,3 @@ $npm install
 - [Node.JS](https://nodejs.org/en/)
 - HTML5 Canvas
 
-## Author
-[@tingwei628](https://github.com/tingwei628)
-

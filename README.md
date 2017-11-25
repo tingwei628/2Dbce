@@ -9,6 +9,14 @@
 
 - [gm5](https://github.com/tingwei628/HC/tree/master/lib/gm5)
 
+## Support
+- Livereload
+
+## Author
+[@tingwei628](https://github.com/tingwei628)
+
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/sbvq6p199xe)
 
 ## License
 MIT
+
