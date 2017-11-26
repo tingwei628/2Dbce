@@ -8,7 +8,7 @@
     "clean": "rm -rf lib/gm5/build/js/",
     "build:dev": "npm run clean && node_modules/.bin/rollup -c lib/gm5/rollup.config.js --watch",
     "build:prod": "npm run clean && NODE_ENV=production node_modules/.bin/rollup -c lib/gm5/rollup.config.js",
-    "postinstall": "npm run build:prod"
+    "start": "npm run build:prod"
   },
   "repository": {
     "type": "git",
