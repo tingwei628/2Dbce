@@ -4,7 +4,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![node-image](https://img.shields.io/badge/node.js-%3E=_6.0-green.svg?style=flat-square)](http://nodejs.org/download/)
 
-> ### A ball collision game (demo)
+> ### A ball collision game
 
 ## Screencast
 
