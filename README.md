@@ -17,7 +17,7 @@
 
 ## Projects
 
-- [gm5](https://github.com/tingwei628/HC/tree/master/lib/gm5)
+- [gm5](https://hc-gm5.herokuapp.com/)
 
 ## Support
 - Hot Reload
