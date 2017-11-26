@@ -9,7 +9,7 @@
 ## Screencast
 
 
-![GIF](https://media.giphy.com/media/l2QE6s3ISw2RUSd4A/giphy.gif)
+![GIF](https://media.giphy.com/media/xUOxfhV2mvAFVZMfhS/giphy.gif)
 
 ## Installing
 ```
