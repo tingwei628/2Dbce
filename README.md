@@ -11,6 +11,10 @@
 
 <a href="https://imgflip.com/i/200c9o"><img src="https://i.imgflip.com/200c9o.jpg" title="made at imgflip.com"/></a>
 
+> No Express, Koa, ...
+
+> ONLY SOCKET.IO :tada::tada::tada::tada:
+
 ## Projects
 
 - [gm5](https://github.com/tingwei628/HC/tree/master/lib/gm5)
