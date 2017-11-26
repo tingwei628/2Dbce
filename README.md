@@ -5,12 +5,18 @@
 
 > Built with HTML5 Canvas 
 
-## Demo
+## Feature
+
+  > **No Framework!**
+
+## Projects
 
 - [gm5](https://github.com/tingwei628/HC/tree/master/lib/gm5)
 
 ## Support
-- Livereload
+- Hot Reload
+
+![GIF](https://media.giphy.com/media/xUOxfhV2mvAFVZMfhS/giphy.gif)
 
 ## Author
 [@tingwei628](https://github.com/tingwei628)
