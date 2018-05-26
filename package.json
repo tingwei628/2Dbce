@@ -10,7 +10,8 @@
     "build:prod": "npm run clean && NODE_ENV=production node_modules/.bin/rollup -c lib/gm5/rollup.config.js",
     "postinstall": "npm run build:prod",
     "start": "node lib/gm5/utils/server.prod.js",
-    "start:dev": "node lib/gm5/utils/server.js"
+    "start:dev": "node lib/gm5/utils/server.js",
+    "fastinstall": "npm set progress=false && npm install"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
     "html5",
     "canvas",
     "node",
-    "socketio"
+    "eventsource"
   ],
   "author": "tingwei628",
   "license": "MIT",
@@ -41,9 +42,7 @@
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^2.0.1"
   },
-  "dependencies": {
-    "socket.io": "^2.0.4"
-  },
+  "dependencies": {},
   "engines": {
     "node": "6.x.x"
   }
