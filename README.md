@@ -13,8 +13,6 @@
 
 > No Express, Koa, ...
 
-> ONLY SOCKET.IO :tada::tada::tada::tada:
-
 ## Projects
 
 - [gm5](https://hc-gm5.herokuapp.com/)
