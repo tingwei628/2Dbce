@@ -5,7 +5,7 @@
   "main": "lib/gm5/src/index.js",
   "scripts": {
     "test": "echo done",
-    "clean": "rm -rf lib/gm5/build/js/",
+    "clean": "rm -rf lib/gm5/build/",
     "build:dev": "npm run clean && node_modules/.bin/rollup -c lib/gm5/rollup.config.js --watch",
     "build:prod": "npm run clean && NODE_ENV=production node_modules/.bin/rollup -c lib/gm5/rollup.config.js",
     "postinstall": "npm run build:prod",
