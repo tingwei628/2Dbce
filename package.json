@@ -46,7 +46,7 @@
     "rollup-plugin-uglify": "^2.0.1"
   },
   "dependencies": {
-    "rollup-plugin-hotreload": "file:../../rph/rollup-plugin-hotreload/rollup-plugin-hotreload-2.2.4.tgz"
+    "rollup-plugin-hotreload": "^2.2.5"
   },
   "engines": {
     "node": "9.x.x"
