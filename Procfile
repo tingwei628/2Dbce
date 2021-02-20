@@ -1,1 +1,0 @@
-web: node lib/gm5/utils/server.prod.js
