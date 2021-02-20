@@ -13,20 +13,6 @@
 
 > No Express, Koa, ...
 
-## Projects
-
-- [gm5](https://hc-gm5.herokuapp.com/)
-
-## Support
-- Hot Reload
-
-![GIF](https://media.giphy.com/media/xUOxfhV2mvAFVZMfhS/giphy.gif)
-
-## Author
-[@tingwei628](https://github.com/tingwei628)
-
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/sbvq6p199xe)
-
 ## License
 MIT
 
